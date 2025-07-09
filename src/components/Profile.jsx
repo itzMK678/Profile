@@ -34,7 +34,7 @@ const Profile = () => {
 
   return (
     <div id="ProfileDiv"style={{ display: "flex",justifyContent:"center" }}>
-      <div style={{ margin: "20px" , width:"400px" }}>
+      <div style={{ margin: "20px"  }}>
         <p style={{ color: "#a273c2", fontSize: "14px", opacity: "70%" }}>
           Profile
         </p>
