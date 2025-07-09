@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Mypic from "../assets/Pic.png"
+import Mypic from "../assets/image.jpeg"
 import "./Profile.css";
 import Overview from "../MainPages/Overview";
 import Aboutpage from "../MainPages/Aboutpage";
