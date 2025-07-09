@@ -1,0 +1,96 @@
+.LatestProj {
+  display: flex;
+  justify-content:first baseline;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #c1c1c1;
+}
+
+/* Accordion content container */
+.LatestProj details > div {
+  background-color: #242424;
+  padding-top: 5px;
+  border-radius: 6px;
+  padding-left: 15px;
+  margin-left: -15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Button inside LatestProj */
+.LatestProj button {
+  height: 28px;
+  width: 100px;
+  background-color: #a273c2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 13px;
+  margin-right: 10px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+/* Summary section */
+.LatestProj details {
+  background-color: #242424;
+  height: 35px;
+  padding-top: 5px;
+  width: 92%;
+  border-radius: 6px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+/* ======================== */
+/*     RESPONSIVE DESIGN    */
+/* ======================== */
+
+/* Tablet */
+@media screen and (max-width: 1024px) {
+  .LatestProj details {
+    width: 92%;
+  }
+}
+
+/* Small tablets / large phones */
+@media screen and (max-width: 768px) {
+  .LatestProj details {
+    width: 92%;
+  }
+
+  .LatestProj details > div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .LatestProj button {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .LatestProj details {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .LatestProj button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .LatestProj {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .LatestProj details > div {
+    padding-left: 10px;
+    margin-left: 0;
+  }
+}

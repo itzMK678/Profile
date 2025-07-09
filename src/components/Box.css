@@ -1,0 +1,224 @@
+.Card {
+  width: 162px;
+  height: 120px;
+  background-color: #242424;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+#thing {
+  width: 100%;
+  height: 40px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#thing p {
+  font-size: 20px;
+  margin-top: 6px;
+  color: #c1c1c1;
+}
+
+.image {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 6px;
+  color: #c1c1c1;
+}
+
+.contact-btn {
+  font-size: 15px;
+  font-weight: 200;
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #a273c2;
+  border: none;
+  border-radius: 6px;
+  color: #c1c1c1;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.Card:hover{
+border: 1.3px solid #a273c2;
+}
+
+#thing{
+    width:80% ;
+    height: 40px;
+   margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Intro{border-radius: 6px;
+    padding: 15px;
+    width: 70%;
+background-color: #242424;}
+#Intro:hover{
+    border:1px solid #a273c2
+}
+#Intro p {
+    padding-left: 20px;
+}
+
+ #name:hover{
+    color: #a66bce;
+
+ }
+
+#about{
+  border-radius: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  color:#727272;
+  font-size: 16px;
+  font-weight: 100;
+  width: 90%;
+ background-color: #242424;
+}
+
+
+/* Contact box */
+#contact-me {
+  background-color: #242424;
+  border-radius: 8px;
+  width: 92%;
+  width: 800px;
+ margin-top: 30px;
+}
+
+.input-box {
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  outline: none;
+  width: 50%;
+  padding-left: 0;
+  
+  padding-bottom: 20px;
+  
+}
+
+input,
+textarea {
+  height: 40px;
+  width: 330px;
+  background-color: transparent;
+  border: 1px solid #a273c2;
+  padding: 5px;
+  border-radius: 4px;
+  color: #a273c2;
+  font-size: 14px;
+  resize: none;
+}
+
+ #msg {
+  
+  height: 225px;
+  width: 330px;
+}
+
+textarea:focus,
+input:focus {
+  color: white;
+  border: 2px solid #a273c2;
+  outline: none;
+}
+
+/* Hide number input scroll/spinner */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#contact-me button {
+  background-color: #a273c2;
+  border: none;
+  width: 100px;
+  height: 35px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* ========================== */
+/*       RESPONSIVENESS       */
+/* ========================== */
+
+@media screen and (max-width: 1024px) {
+  #contact-me{
+    margin-left: -20px;
+    padding-left: -20px;
+  }
+  #contact-me h1 {
+    font-size: 32px;
+  }
+
+  .input-box {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  #contact-me {
+    margin-right: 20px;
+    padding: 15px;
+    width:650px;
+  }
+
+  #contact-me h1 {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .input-box {
+    width: 90%;
+    padding-right: 10px;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  #msg {
+    height: 220px;
+    width:220px;
+  }
+
+  #contact-me button {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+#contact-me{
+  flex-direction: column;
+  width: 360px;
+}
+  #contact-me h1 {
+    font-size: 24px;
+  }
+
+  .input-box {
+    width: 100%;
+    padding: 0;
+  }
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
+
+  #msg {
+    height: 73%;
+  }
+}
