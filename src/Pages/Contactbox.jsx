@@ -5,7 +5,7 @@ import "../components/Box.css"
 const Contactbox = () => {
   return (  
     <>
-    <div id="contact-me" style={{ marginTop:"30px",}}>
+    {/* <div id="contact-me" style={{ marginTop:"30px",}}>
       <div className="abo"  style={{ display: "flex" ,margin:"20px",gap: "10px",paddingTop:"20px"}} >
         <div className="input-box" style={{marginTop:'20px' }}>
           <input type="text" placeholder="Name" />
@@ -18,7 +18,7 @@ const Contactbox = () => {
           <textarea id="msg" style={{ marginTop:'20px' }}placeholder="Message for me" rows="6" />
         </div>
       </div>
-    </div>
+    </div> */}
     </>
   );
 };
