@@ -67,7 +67,8 @@ const Profile = () => {
       </div>
 
       {/* <div id="SecPart" > */}
-      <div style={{margin:"20px",}}>
+     <div style={{ marginTop: "20px", display: 'flex', flexDirection: "column", alignItems: "center" }}>
+
         {content}
       </div>
     </div>
