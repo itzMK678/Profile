@@ -1,7 +1,7 @@
 .Card {
   width: 162px;
   height: 120px;
-  /* margin: 5px; */
+  margin: 5px;
   background-color: #242424;
   border-radius: 10px;
   transition: all 0.3s ease;
@@ -11,7 +11,7 @@
   height: 40px;
   margin: 15px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -38,7 +38,7 @@
   border: none;
   border-radius: 6px;
   color: #c1c1c1;
-  margin-left: 15px;
+  margin-right: 15px;
   cursor: pointer;
 }
 
@@ -69,223 +69,10 @@ background-color: #242424;}
     color: #a66bce;
 
  }
-
-#about{
-  border-radius: 14px;
-  font-family: 'Segoe UI', sans-serif;
-  color:#727272;
-  font-size: 16px;
-  font-weight: 100;
-  width: 90%;
- background-color: #242424;
-}
-
-
-
-/* Contact box */
-#contact-me {
-  background-color: #242424;
-  border-radius: 8px;
-  width: fit-content;
  
- margin-top: 30px;
-}
-
-.input-box {
- 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 15px;
-  outline: none;
-  width: 50%;
-  padding-left: 0;
-  
-  padding-bottom: 20px;
-  
-}
-.abo{
-  justify-content: space-evenly;
-}
-input,
-textarea {
-  height: 40px;
-  width: 330px;
-  background-color: transparent;
-  border: 1px solid #a273c2;
-  padding: 5px;
-  border-radius: 4px;
-  color: #a273c2;
-  font-size: 14px;
-  resize: none;
-}
-
- #msg {
-  
-  height: 225px;
-  width: 330px;
-}
-
-textarea:focus,
-input:focus {
-  color: white;
-  border: 2px solid #a273c2;
-  outline: none;
-}
-
-/* Hide number input scroll/spinner */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-#contact-me button {
-  background-color: #a273c2;
-  border: none;
-  width: 100px;
-  height: 35px;
-  border-radius: 6px;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: 10px;
-}
-.msg{
-  width: fit-content;
-}
-
-/* ========================== */
-/*       RESPONSIVENESS       */
-/* ========================== */
-
-@media screen and (max-width: 1024px) {
- 
-  #contact-me {
-    width: 900px;
-  }
-
-  .input-box {
-    width: 60%;
-    align-items: center;
-  }
-  .msg{
-    margin-right: 35px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-
-  #contact-me {
-    margin-right: 20px;
-    padding: 15px;
-    width:650px;
-  }
-
-  #contact-me h1 {
-    font-size: 28px;
-    padding: 10px;
-  }
-
-  .input-box {
-    width: 90%;
-    padding-right: 10px;
-  }
-
-  input,
-  textarea {
-    width: 90%;
-  }
-
-  #msg {
-    height: 220px;
-    width:220px;
-  }
-
-  #contact-me button {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-#contact-me{
-  flex-direction: column;
-  width: 350px;
-}
-  #contact-me h1 {
-    font-size: 24px;
-  }
-
-  .input-box {
-    width: 100%;
-    padding: 0;
-  }
-
-  input,
-  textarea {
-    font-size: 13px;
-  }
-
-  #msg {
-    height: 73%;
-  }
-}
-
-@media screen and (max-width: 480px){
-  #about{
-    width:350px ;
-  }
-}
-@media screen and (max-width: 380px){
-  #about{
-    width:300px ;
-  }
- 
-  #contact-me{
-    width: 300px;
-    padding: 0px;
-    margin-left: 1px;
-  }
-  .abo{
-    flex-direction: column;
-    
-  }
-  .input-box {
-    width: 100%;
-  }
-  .input-box , #msg{
-    margin-left: 10px;
-    width: 240px;
-    margin-right: 0px;
-  }
-  
-}
-@media screen and (max-width: 390px) {
-  #contact-me{
-   width: 270px;
-  }
-   .abo{
-    flex-direction: column;
-   }
-}
-@media screen and (max-width: 380px){
-  
-  .abo{
-    width: fit-content;
-  }
-  #about{
-    width:300px ;
-  }
-  #contact-me{
-    padding: 0px;
-    margin: 0px;
-  }
-}
 
 @media screen and (max-width: 320px){
-  #about{
-    width:240px ;
-  }
+
   .Card {
   width: 142px;
   height: 110px;
@@ -316,14 +103,210 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 130px;
   height: 25px;
   margin-top: 10px;
-  margin-left: 15px;
-} #contact-me{
-    width: 260px;
-    padding: 0px;
-    margin-left: 1px;
+  margin-left: 15px;}}
+
+
+/* chatgpt */
+/* === Improved Contactbox Responsive Styling (Preserving Your Design) === */
+
+#contact-me {
+  background-color: #242424;
+  border-radius: 8px;
+  width: 95%;
+  max-width: 1000px;
+  margin: 30px auto 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.abo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  align-items: flex-start;
+}
+
+.input-box input,
+.input-box textarea {
+  height: 40px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #a273c2;
+  padding: 5px;
+  border-radius: 4px;
+  color: #a273c2;
+  font-size: 14px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+  color: white;
+  border: 2px solid #a273c2;
+  outline: none;
+}
+
+.contact-btn,
+#contact-me button {
+  font-size: 15px;
+  font-weight: 200;
+  width: 150px;
+  height: 35px;
+  margin-top: 10px;
+  background-color: #a273c2;
+  border: none;
+  border-radius: 6px;
+  color: #c1c1c1;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.msg {
+  width: 100%;
+  max-width: 400px;
+}
+
+#msg {
+  width: 100%;
+  height: 225px;
+  background-color: transparent;
+  border: 1px solid #a273c2;
+  border-radius: 4px;
+  color: #a273c2;
+  padding: 5px;
+  font-size: 14px;
+  resize: none;
+}
+
+/* Remove spinner from number inputs */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ========== Responsive Breakpoints ========== */
+
+@media screen and (max-width: 768px) {
+  .abo {
+    flex-direction: column;
+    align-items: center;
   }
- #msg {
-    height: 65%;
-    width: 230px;
+
+  .input-box,
+  .msg {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  #msg {
+    height: 200px;
+  }
+
+  #contact-me button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #contact-me {
+    padding: 15px 10px;
+  }
+
+  .input-box,
+  .msg {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    font-size: 13px;
+  }
+
+  #msg {
+    height: 180px;
+  }
+
+  .contact-btn,
+  #contact-me button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .input-box,
+  .msg {
+    max-width: 260px;
+  }
+
+  #msg {
+    height: 160px;
+  }
+}
+
+
+/* About */
+
+#About {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+#about {
+  border-radius: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #727272;
+  font-size: 16px;
+  font-weight: 100;
+  width: 100%;
+  background-color: #242424;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+/* Smaller Tablets */
+@media screen and (max-width: 768px) {
+  #about {
+    width: 95%;
+    font-size: 15px;
+  }
+}
+
+/* Phones */
+@media screen and (max-width: 480px) {
+  #about {
+    width: 90%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  #About p:first-child {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+/* Very Small Phones */
+@media screen and (max-width: 360px) {
+  #about {
+    width: 92%;
+    font-size: 13px;
+    padding: 10px;
   }
 }
