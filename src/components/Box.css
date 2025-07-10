@@ -80,12 +80,13 @@ background-color: #242424;}
 }
 
 
+
 /* Contact box */
 #contact-me {
   background-color: #242424;
   border-radius: 8px;
   width: 92%;
-  width: 800px;
+  /* width: 800px; */
  margin-top: 30px;
 }
 
@@ -153,16 +154,17 @@ input[type="number"]::-webkit-inner-spin-button {
 /* ========================== */
 
 @media screen and (max-width: 1024px) {
-  #contact-me{
-    margin-left: -20px;
-    padding-left: -20px;
-  }
+ 
   #contact-me h1 {
     font-size: 32px;
   }
 
   .input-box {
-    width: 70%;
+    width: 60%;
+    align-items: center;
+  }
+  .msg{
+    margin-right: 35px;
   }
 }
 
@@ -202,7 +204,7 @@ input[type="number"]::-webkit-inner-spin-button {
 @media screen and (max-width: 480px) {
 #contact-me{
   flex-direction: column;
-  width: 360px;
+  width: 350px;
 }
   #contact-me h1 {
     font-size: 24px;
@@ -220,5 +222,40 @@ input[type="number"]::-webkit-inner-spin-button {
 
   #msg {
     height: 73%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #about{
+    width:350px ;
+  }
+}
+@media screen and (max-width: 380px){
+  #about{
+    width:300px ;
+  }
+ 
+  #contact-me{
+    width: 300px;
+    padding: 0px;
+    margin-left: 1px;
+  }
+  .abo{
+    flex-direction: column;
+    
+  }
+  .input-box {
+    width: 100%;
+  }
+  .input-box , #msg{
+    margin-left: 10px;
+    width: 240px;
+    margin-right: 0px;
+  }
+  
+}
+@media screen and (max-width: 380px){
+  #about{
+    width:300px ;
   }
 }

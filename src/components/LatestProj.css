@@ -75,7 +75,9 @@
 /* Mobile phones */
 @media screen and (max-width: 480px) {
   .LatestProj details {
-    width: 100%;
+    margin-left: -10px;
+    padding-right: 10px;
+   
     font-size: 14px;
   }
 
@@ -93,4 +95,11 @@
     padding-left: 10px;
     margin-left: 0;
   }
+}
+@media screen and (max-width: 380px){
+ .LatestProj details{
+  width: 300px;
+  
+  max-width: 300px;
+ }
 }

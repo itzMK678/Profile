@@ -112,3 +112,10 @@
     font-size: 13px;
   }
 }
+@media screen and (max-width: 380px){
+  .skills-container {
+    width: 320px;
+    justify-content: flex-start;
+    
+  }
+}

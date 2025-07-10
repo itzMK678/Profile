@@ -10,6 +10,7 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
         width: "360px",
         borderRadius: "8px",
         overflow: "hidden",
+        marginTop:"10px",
       }}
     >
       <div

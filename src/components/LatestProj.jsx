@@ -11,7 +11,7 @@ const LatestProj = () => {
 
   return (
     <div className="LatestProj">
-      <details style={{ paddingBottom: padding }}>
+      <details >
         <summary onClick={handleClick}>See my Latest Project</summary>
         <div>
           <p>API Tester is my latest project which I created using React and Axios.</p>

@@ -75,7 +75,7 @@ const Projects = () => {
   return (
     <>
    <p style={{color:"#a273c2"}}> Projects</p>
-    <div className="projects" style={{ display: "flex", flexWrap: "wrap", gap: "10px", width: "90%", justifyContent: "center" ,}}>
+    <div className="projects" style={{ display: "flex", flexWrap: "wrap", gap: "10px", width: "100%", justifyContent: "center" ,}}>
    {ProjectData.map((item,index) =>(
     <ProjectsCard key={index} image={item.image}  name={item.name} type={item.type} link={item.link} Technologies={item.Technologies}/>
    ))}

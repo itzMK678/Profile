@@ -2,7 +2,7 @@
   height: max-content;
   width: 780px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 20px;
 }
 
@@ -168,13 +168,13 @@
 
 @media screen and (max-width: 480px) {
   .skills-timeline-container {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+   
   }
 
   .timeline-title {
     font-size: 16px;
-    margin: 20px 0;
+  
   }
 
   .timeline-dot {
@@ -206,6 +206,11 @@
   .skill-description {
     font-size: 12px;
   }
+  .timeline-dot {
+  
+  left: -15px;
+ 
+}
 }
 
 @media screen and (max-width: 320px) {

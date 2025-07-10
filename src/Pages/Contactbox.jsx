@@ -6,8 +6,8 @@ const Contactbox = () => {
   return (
     <>
     <div id="contact-me" >
-      <div className="abo"  style={{ display: "flex" ,marginTop:"30px",gap: "10px"}} >
-        <div className="input-box" style={{ width:'50%',display: "flex", gap: "10px",marginTop:'20px' }}>
+      <div className="abo"  style={{ display: "flex" ,marginTop:"30px",gap: "10px",paddingTop:"20px"}} >
+        <div className="input-box" style={{marginTop:'20px' }}>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="number" placeholder="Phone Number" />

@@ -5,7 +5,7 @@ import "../MainPages/Responsive.css";
 const Box = ({ name, icon, link }) => {
   return (
     
-    <div className="Card">
+    <div className="Card" style={{marginTop:'20px'}}>
       <div id="thing">
         <p>{name}</p>
         <div className="image" style={{marginTop:"-16px"}}>{icon}</div>
