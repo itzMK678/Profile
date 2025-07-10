@@ -215,3 +215,8 @@ body {
   width:20px ;
 }
 }
+@media screen and (max-width: 320px){
+  #SecPart{
+    width:280px ;
+  }
+}
