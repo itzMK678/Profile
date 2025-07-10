@@ -66,7 +66,8 @@ const Profile = () => {
         </div>
       </div>
 
-      <div id="SecPart" >
+      {/* <div id="SecPart" > */}
+      <div>
         {content}
       </div>
     </div>
