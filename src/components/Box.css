@@ -86,8 +86,8 @@ background-color: #242424;}
 #contact-me {
   background-color: #242424;
   border-radius: 8px;
-  width: 92%;
-  /* width: 800px; */
+  width: fit-content;
+ 
  margin-top: 30px;
 }
 
@@ -104,7 +104,9 @@ background-color: #242424;}
   padding-bottom: 20px;
   
 }
-
+.abo{
+  justify-content: space-evenly;
+}
 input,
 textarea {
   height: 40px;
@@ -149,6 +151,9 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 14px;
   margin-top: 10px;
 }
+.msg{
+  width: fit-content;
+}
 
 /* ========================== */
 /*       RESPONSIVENESS       */
@@ -156,8 +161,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 @media screen and (max-width: 1024px) {
  
-  #contact-me h1 {
-    font-size: 32px;
+  #contact-me {
+    width: 900px;
   }
 
   .input-box {
@@ -255,9 +260,25 @@ input[type="number"]::-webkit-inner-spin-button {
   }
   
 }
+@media screen and (max-width: 390px) {
+  #contact-me{
+   width: 270px;
+  }
+   .abo{
+    flex-direction: column;
+   }
+}
 @media screen and (max-width: 380px){
+  
+  .abo{
+    width: fit-content;
+  }
   #about{
     width:300px ;
+  }
+  #contact-me{
+    padding: 0px;
+    margin: 0px;
   }
 }
 

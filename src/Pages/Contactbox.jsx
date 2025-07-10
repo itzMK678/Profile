@@ -5,8 +5,8 @@ import "../components/Box.css"
 const Contactbox = () => {
   return (
     <>
-    <div id="contact-me" >
-      <div className="abo"  style={{ display: "flex" ,marginTop:"30px",gap: "10px",paddingTop:"20px"}} >
+    <div id="contact-me" style={{ marginTop:"30px",}}>
+      <div className="abo"  style={{ display: "flex" ,margin:"20px",gap: "10px",paddingTop:"20px"}} >
         <div className="input-box" style={{marginTop:'20px' }}>
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />

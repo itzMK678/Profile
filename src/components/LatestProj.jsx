@@ -3,15 +3,15 @@ import "../MainPages/Responsive.css";
 import "../components/LatestProj.css";
 
 const LatestProj = () => {
-  const [padding, setPadding] = useState("10px");
+  const [paddingBottom, setPaddingBottom] = useState("10px");
 
   const handleClick = () => {
-    setPadding(prev => (prev === "10px" ? "30px" : "10px"));
+    setPaddingBottom(prev => (prev === "10px" ? "30px" : "10px"));
   };
 
   return (
-    <div className="LatestProj">
-      <details >
+    <div className="LatestProj" style={{ paddingBottom }}>
+      <details>
         <summary onClick={handleClick}>See my Latest Project</summary>
         <div>
           <p>API Tester is my latest project which I created using React and Axios.</p>
