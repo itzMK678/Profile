@@ -43,7 +43,7 @@ const SkillsIcon = () => {
 
   return (
     <>
-      <p className="skills-heading">My Skills</p>
+      {/* <p className="skills-heading">My Skills</p>
       <div className="skills-container">
         <div className="skills-slider">
           <div
@@ -70,7 +70,7 @@ const SkillsIcon = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
