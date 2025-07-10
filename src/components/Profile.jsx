@@ -67,7 +67,7 @@ const Profile = () => {
       </div>
 
       {/* <div id="SecPart" > */}
-      <div style={{marginTop:"20px"}}>
+      <div style={{margin:"20px",}}>
         {content}
       </div>
     </div>
