@@ -8,9 +8,10 @@
 .skills-container {
   display: flex;
   justify-content: center;
-  width: 770px;
+  width: 100%;
+  max-width: 770px;
   overflow: hidden;
-  margin: 0 ;
+  margin: 0 auto;
   transition: all 0.3s ease-in-out;
 }
 
@@ -24,7 +25,7 @@
 }
 
 .skill-box {
-  width: 100px;
+  width: 100%;
   min-width: 200px;
   height: 80px;
   display: flex;
@@ -57,33 +58,35 @@
 /* ======================== */
 /*     RESPONSIVE DESIGN    */
 /* ======================== */
-
 @media screen and (max-width: 1440px) {
-  .skills-container {
-   /* width: 920px; */
-
-  }
-}
-@media screen and (max-width: 1024px) {
   .skills-container {
     width: 860px;
   }
 }
 
+
+
+
+@media screen and (max-width: 1024px) {
+  .skills-container {
+    width: 100%;
+    max-width: 860px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .skills-container {
-    width: 650px;
+    width: 100%;
+    max-width: 650px;
     justify-content: flex-start;
   }
 
   .skill-box {
     width: 100px;
-    /* min-width: 160px; */
     height: 100px;
   }
 
   .skill-icon-wrapper {
-    /* margin-top: 20px; */
     font-size: 28px;
   }
 
@@ -94,9 +97,11 @@
 
 @media screen and (max-width: 480px) {
   .skills-container {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     justify-content: flex-start;
   }
+
   .skill-box {
     width: 140px;
     min-width: 140px;
@@ -112,15 +117,18 @@
     font-size: 13px;
   }
 }
-@media screen and (max-width: 390px){
+
+@media screen and (max-width: 390px) {
   .skills-container {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     justify-content: flex-start;
-    
   }
 }
-@media screen and (max-width: 320px){
-  .skills-container{
-    width:240px ;
+
+@media screen and (max-width: 320px) {
+  .skills-container {
+    width: 100%;
+    max-width: 240px;
   }
 }

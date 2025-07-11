@@ -15,7 +15,7 @@ const Contactbox = () => {
           <button>Send now</button>
         </div>
         <div className="msg" >
-          <textarea id="msg" style={{ marginTop:'20px',margi }}placeholder="Message for me" rows="6" />
+          <textarea id="msg" style={{ marginTop:'20px',}}placeholder="Message for me" rows="6" />
         </div>
       </div>
     </div>
