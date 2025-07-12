@@ -11,7 +11,7 @@ const About = () => {
           I enjoy building interactive and visually appealing websites.
       </p>
       <p><strong style={{color:"#c1c1c1"}}>Qualification:</strong> BSC Undergraduate</p>
-      <p><strong style={{color:"#c1c1c1"}}>Study:</strong> Currently pursuing my Bachelor's degree in Computer Sustem Engineering.</p>
+      <p><strong style={{color:"#c1c1c1"}}>Study:</strong> Currently pursuing my Bachelor's degree in Computer System Engineering.</p>
       <p><strong style={{color:"#c1c1c1"}}>Experience:</strong> No professional experience yet, but I am actively working on personal projects to improve my skills.</p>
   
     </div>
