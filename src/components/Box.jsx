@@ -5,7 +5,7 @@ import './Box.css';
 const Box = ({ name, icon, link }) => {
   return (
     
-    <div className="Card" style={{marginTop:'20px'}}>
+    <div className="Card" >
       <div id="thing">
         <p>{name}</p>
         <div className="image" style={{marginTop:"-16px"}}>{icon}</div>

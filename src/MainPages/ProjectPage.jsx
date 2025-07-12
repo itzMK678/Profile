@@ -4,11 +4,10 @@ import Projects from '../Pages/Projects'
 const ProjectPage = () => {
   return (
     <>
-    <div className="Project-page" > 
-
     <LatestProj/>
     <Projects/>
-    </div>
+    
+    
      </>
   )
 }

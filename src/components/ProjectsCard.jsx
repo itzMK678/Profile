@@ -2,6 +2,7 @@ import React from "react";
 
 const ProjectsCard = ({ image, name, type, Technologies, link }) => {
   return (
+  
     <div
       id="ProjectsCard"
       style={{
@@ -75,6 +76,9 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
         </button>{" "}
       </a>
     </div>
+
+    
+    // e remov
   );
 };
 

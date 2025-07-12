@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./SkillsIcon.css";
-import "../MainPages/Responsive.css";
+
 
 const SkillsIcon = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,6 +43,7 @@ const SkillsIcon = () => {
 
   return (
     <>
+    <div id="Checkin" style={{marginBottom:"15px"}}>
       <p className="skills-heading">My Skills</p>
       <div className="skills-container">
         <div className="skills-slider">
@@ -71,7 +72,8 @@ const SkillsIcon = () => {
           </div>
         </div>
       </div>
-    </>
+      </div>
+    </> 
   );
 };
 

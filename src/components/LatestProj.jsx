@@ -10,6 +10,7 @@ const LatestProj = () => {
   };
 
   return (
+   
     <div className="LatestProj" style={{ paddingBottom }}>
       <details>
         <summary onClick={handleClick}>See my Latest Project</summary>
