@@ -209,9 +209,15 @@ body {
   width: 400px;
   margin-left: 20px;
 }
+#FirstDiv{
+  overflow: hidden;
 }
   
 @media screen and (max-width: 390px) {
+  .Pcard {
+    width:330px;
+
+  }
   #SecPart{
    
   width: 300px;
@@ -224,5 +230,10 @@ body {
 @media screen and (max-width: 320px){
   #SecPart{
     width:280px ;
+  }
+    .Pcard {
+    width:260px;
+    padding: 20px;
+
   }
 }

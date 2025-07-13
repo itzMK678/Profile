@@ -60,14 +60,14 @@
 /* Tablet screens */
 @media screen and (max-width: 1024px) {
   .LatestProj details {
-    width: 96%;
+    width: 99%;
   }
 }
 
 /* Medium devices */
 @media screen and (max-width: 768px) {
   .LatestProj details {
-    width: 90%;
+    width: 99%;
   }
   .LatestProj details > div {
     flex-direction: column;
@@ -91,7 +91,7 @@
     font-size: 14px;
     padding: 10px;
     margin-left: 0;
-    width: 89%;
+    width: 98%;
   }
 
   .LatestProj details > div {
@@ -108,8 +108,8 @@
 /* Very small screens */
 @media screen and (max-width: 380px) {
   .LatestProj details {
-    max-width: 300px;
-    width: 96%;
+    max-width: 330px;
+    width: 99%;
   }
 
   .LatestProj button {

@@ -230,10 +230,13 @@ input[type="number"]::-webkit-inner-spin-button {
   #contact-me {
     padding: 15px 10px;
   }
-
+#msg{
+  max-width: 400px;
+  margin-right: 5px;
+}
   .input-box,
   .msg {
-    width: 100%;
+    width: 95%;
   }
 
   input,
@@ -289,7 +292,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* Smaller Tablets */
 @media screen and (max-width: 768px) {
   #about {
-    width: 95%;
+    width: 100%;
     font-size: 15px;
   }
 }
@@ -308,10 +311,11 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
-/* Very Small Phones */
+
 @media screen and (max-width: 360px) {
   #about {
-    width: 92%;
+    /* width: 200px; */
+    width: 100%;
     font-size: 13px;
     padding: 10px;
   }

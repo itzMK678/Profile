@@ -5,7 +5,9 @@ const About = () => {
 <>
 <div id="About">
     <p style={{color: ' #a273c2',fontSize: '14px',opacity:"70%"}}>Introduction</p>
-    <div id='about' style={{padding:"15px"}}>
+    <div id='about' 
+    // style={{padding:"15px"}}
+    >
       <p>
           Hi, I'm <strong style={{color:"#c1c1c1"}}>Mamoon Khaliq</strong>, a passionate Front-end Developer skilled in HTML, CSS, JavaScript, REACT and C++.  
           I enjoy building interactive and visually appealing websites.
