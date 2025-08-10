@@ -39,7 +39,7 @@ const Test = () => {
     <div id="FirstDiv">
          <div>
                 
-                <p style={{ color: "#a273c2", fontSize: "14px", opacity: "70%" }}>
+                <p style={{ color: "#8c21d3ff", fontSize: "14px", opacity: "70%" }}>
                   Profile
                 </p>
                 <div className="Pcard" style={{marginRight:"10px"}}>
@@ -59,7 +59,7 @@ const Test = () => {
                        <li
           key={c.tab}
           onClick={() => setActive(c.tab)}
-          style={{ color: active === c.tab ? "#a273c2" : "#c1c1c1", cursor: "pointer" }}
+          style={{ color: active === c.tab ? "#8c21d3ff" : "#c1c1c1", cursor: "pointer" }}
         >
           {c.name}
         </li>

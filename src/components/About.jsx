@@ -4,7 +4,7 @@ const About = () => {
   return (
 <>
 <div id="About">
-    <p style={{color: ' #a273c2',fontSize: '14px',opacity:"70%"}}>Introduction</p>
+    <p style={{color: ' #8c21d3ff',fontSize: '14px',opacity:"70%"}}>Introduction</p>
     <div id='about' 
     // style={{padding:"15px"}}
     >

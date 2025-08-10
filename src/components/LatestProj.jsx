@@ -17,7 +17,7 @@ const LatestProj = () => {
         <div>
           <p>API Tester is my latest project which I created using React and Axios.</p>
           <a href="https://api-tester-promax.vercel.app/" target="_blank" rel="noopener noreferrer">
-            <button>See project</button>
+            <button >See project</button>
           </a>
         </div>
       </details>

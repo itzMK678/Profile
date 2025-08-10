@@ -34,7 +34,7 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
           marginTop: "-4px",
           fontSize: "14px",
           marginLeft: "15px",
-          color: "#a273c2",
+          color: "#a432f0ff",
           cursor: "pointer",
         }}
       >
@@ -66,7 +66,7 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
             width: "100%",
             fontSize: "14px",
             height: "30px",
-            backgroundColor: "#a273c2",
+            backgroundColor: "#a432f0ff",
             border: "none",
             marginTop: "2px",
             cursor: "pointer",

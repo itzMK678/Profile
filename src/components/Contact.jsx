@@ -27,7 +27,7 @@ const dataList = [
 const Contact = () => {
   return (
     <>
-    <p style={{color: ' #a273c2',fontSize: '14px',opacity:"70%",}}>My Socialmedia</p>
+    <p style={{color: ' #a432f0ff',fontSize: '14px',opacity:"70%",}}>My Socialmedia</p>
     <div  style={{ display: "flex",  flexWrap: "wrap" ,justifyContent:"space-around",}}>
       {dataList.map((item, index) => (
         <Box key={index} name={item.name} icon={item.icon} link={item.link} />
