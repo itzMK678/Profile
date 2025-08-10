@@ -12,7 +12,7 @@ const About = () => {
           Hi, I'm <strong style={{color:"#c1c1c1"}}>Mamoon Khaliq</strong>, a passionate Front-end Developer skilled in HTML, CSS, JavaScript, REACT and C++.  
           I enjoy building interactive and visually appealing websites.
       </p>
-      <p><strong style={{color:"#c1c1c1"}}>Qualification:</strong> BSC Undergraduate</p>
+      <p><strong style={{color:"#F0F2F5"}}>Qualification:</strong> BSC Undergraduate</p>
       <p><strong style={{color:"#c1c1c1"}}>Study:</strong> Currently pursuing my Bachelor's degree in Computer System Engineering.</p>
       <p><strong style={{color:"#c1c1c1"}}>Experience:</strong> No professional experience yet, but I am actively working on personal projects to improve my skills.</p>
   

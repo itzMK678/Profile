@@ -10,7 +10,7 @@ import Overview from './MainPages/Overview';
 import Details from './MainPages/Details';
 import ProjectPage from './MainPages/ProjectPage';
 
-// import ProfileMain from './Pages/ProfileMain';
+
 
 function App() {
   return (
