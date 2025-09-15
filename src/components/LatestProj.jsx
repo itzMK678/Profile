@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import "../components/Box.css"
 
-import "../components/LatestProj.css";
 
 const LatestProj = () => {
   const [paddingBottom, setPaddingBottom] = useState("10px");

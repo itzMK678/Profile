@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Mypic from "../assets/image.jpeg"
-import "./Profile.css";
 import Overview from "../MainPages/Overview";
 import Aboutpage from "../MainPages/Aboutpage";
 import ProjectPage from "../MainPages/ProjectPage";
 import Details from "../MainPages/Details";
-
+import "../components/Box.css"
 
 
 const Test = () => {
@@ -42,7 +41,7 @@ const Test = () => {
                 <p style={{ color: "#8c21d3ff", fontSize: "14px", opacity: "70%" }}>
                   Profile
                 </p>
-                <div className="Pcard" style={{marginRight:"10px"}}>
+                <div className="Pcard" style={{marginRight:"10px",cursor:"pointer" }}>
                   <div id="info">
                     <div id="pic">
                       <img src={Mypic} alt="Profile" />

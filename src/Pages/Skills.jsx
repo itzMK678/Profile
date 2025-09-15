@@ -1,6 +1,6 @@
 import React from "react";
-import "./Skills.css";
 
+import "../components/Box.css"
 const Skills = () => {
   const skillsOBJ = [
     {

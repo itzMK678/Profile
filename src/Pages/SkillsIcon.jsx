@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import "./SkillsIcon.css";
 
+import "../components/Box.css"
 
 const SkillsIcon = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
