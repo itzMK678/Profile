@@ -11,17 +11,29 @@ const SkillsIcon = () => {
   const gap = 10;
   const slideWidth = boxWidth + gap;
 
-  const skills = [
-    { name: "C++", icon: "💻" },
-    { name: "HTML5", icon: "🌐" },
-    { name: "CSS3", icon: "🎨" },
-    { name: "JavaScript", icon: "⚡" },
-    { name: "React", icon: "⚛️" },
-    { name: "Canvas", icon: "🖼️" },
-    { name: "Git", icon: "🔧" },
-    { name: "Node.js", icon: "🟢" },
-    
-  ];
+  const skills =[
+  { name: "C++", icon: "💻" },
+  { name: "HTML5", icon: "🌐" },
+  { name: "CSS3", icon: "🎨" },
+  { name: "JavaScript (ES6+)", icon: "⚡" },
+  { name: "React.js", icon: "⚛️" },
+  { name: "Redux", icon: "📦" },
+  { name: "React Router", icon: "🛣️" },
+  { name: "Canvas", icon: "🖼️" },
+  { name: "Git", icon: "🔧" },
+  { name: "Node.js", icon: "🟢" },
+  { name: "Express.js", icon: "🚀" },
+  { name: "MongoDB", icon: "🍃" },
+  { name: "Mongoose", icon: "📘" },
+  { name: "Next.js", icon: "✨" },
+  { name: "Axios", icon: "📡" },
+  { name: "DBMS", icon: "🗄️" },
+  { name: "SQL", icon: "📊" },
+  { name: "Relational Algebra", icon: "➗" },
+  { name: "MIPS Assembly", icon: "⚙️" },
+  { name: "Verilog HDL", icon: "🔌" },
+  { name: "Digital Logic (RTL)", icon: "📐" }
+];
 
   const totalSlides = skills.length - visibleSlides + 1;
 

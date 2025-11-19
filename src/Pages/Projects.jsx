@@ -7,23 +7,47 @@ import Samsung from "../assets/Samsung.png"
 import Snakegame from "../assets/Snakegame.png"
 import Tourism from "../assets/Tourism.png"
 import Login from "../assets/Login.png"
+import Cars from "../assets/Cars.png"
+import Skills from "../assets/Skills.png"
+import Sahara from "../assets/Sahara.png"
 import "../components/Box.css"
 import ProjectsCard from '../components/ProjectsCard'
 
 
 const ProjectData=[ 
      {
+         image: Skills ,
+        name: ' Skills Creative ',
+        Technologies:'NEXT JS , TAILWIND CSS ',
+        type: ' Website',
+        link: "https://www.skillcreatives.com/"
+    },
+     {
+         image: Cars ,
+        name: ' Cars Ralley ',
+        Technologies:'React , TAILWIND CSS ',
+        type: ' Website',
+        link: "https://racefusion.vercel.app/"
+    },
+     {
+         image: Sahara ,
+        name: ' Sahara Wellfare ',
+        Technologies:'React JS , TAILWIND CSS ',
+        type: ' Website',
+        link: "https://sahara-ecru.vercel.app/"
+    },
+    {
          image: MrAPI,
         name: ' Api Tester',
-        Technologies:' HTML , CSS , REACT ',
-        type: ' Website',
+        Technologies:'React JS , TAILWIND CSS , OPENAI API ',
+        type: 'Tools',
         link: "https://api-tester-promax.vercel.app/"
     },
     {
          image: BlogGen,
         name: ' Blog-Gpt',
-        Technologies:' HTML , CSS , REACT ',
-        type: ' Website',
+        Technologies:'React JS , TAILWIND CSS , OPENAI API ',
+        type: ' Tool',
         link: 'https://blog-gpt-omega.vercel.app/'
     },{
          image: CaraWeb,

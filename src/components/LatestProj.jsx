@@ -15,8 +15,8 @@ const LatestProj = () => {
       <details>
         <summary onClick={handleClick}>See my Latest Project</summary>
         <div>
-          <p>API Tester is my latest project which I created using React and Axios.</p>
-          <a href="https://api-tester-promax.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <p>CarsRalley is a MERN Stack event booking website with Stripe payments and a calendar-based scheduling system. </p>
+          <a href="https://racefusion.vercel.app/" target="_blank" rel="noopener noreferrer">
             <button >See project</button>
           </a>
         </div>
