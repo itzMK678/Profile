@@ -1,93 +1,62 @@
-import { useState, useEffect } from "react";
+import { useEffect, useRef } from "react";
 import "../components/Box.css";
 
 const SkillsIcon = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isAutoPlay, setIsAutoPlay] = useState(true);
-
-  const visibleSlides = 3;
-  const boxWidth = 200;
-  const gap = 10;
-  const slideWidth = boxWidth + gap;
+  const trackRef = useRef(null);
 
   const skills = [
     { name: "C++", icon: "💻" },
     { name: "HTML5", icon: "🌐" },
     { name: "CSS3", icon: "🎨" },
-    { name: "JavaScript (ES6+)", icon: "⚡" },
+    { name: "JavaScript", icon: "⚡" },
     { name: "React.js", icon: "⚛️" },
     { name: "Redux", icon: "📦" },
-    { name: "React Router", icon: "🛣️" },
-    { name: "Canvas", icon: "🖼️" },
     { name: "Git", icon: "🔧" },
     { name: "Node.js", icon: "🟢" },
     { name: "Express.js", icon: "🚀" },
     { name: "MongoDB", icon: "🍃" },
-    { name: "Mongoose", icon: "📘" },
-    { name: "Next.js", icon: "✨" },
-    { name: "Axios", icon: "📡" },
-    { name: "DBMS", icon: "🗄️" },
-    { name: "SQL", icon: "📊" },
-    { name: "Relational Algebra", icon: "➗" },
-    { name: "MIPS Assembly", icon: "⚙️" },
-    { name: "Verilog HDL", icon: "🔌" },
-    { name: "Digital Logic (RTL)", icon: "📐" }
   ];
 
-  const totalSlides = skills.length - visibleSlides + 1;
+  // duplicate array for infinite loop
+  const infiniteSkills = [...skills, ...skills];
 
   useEffect(() => {
-    if (!isAutoPlay) return;
+    const track = trackRef.current;
 
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-    }, 3000);
+    let scrollAmount = 0;
 
-    return () => clearInterval(interval);
-  }, [isAutoPlay, totalSlides]);
+    const animate = () => {
+      scrollAmount += 1;
 
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
-    setIsAutoPlay(false);
-    setTimeout(() => setIsAutoPlay(true), 5000);
-  };
+      // Reset when fully scrolled through 1st list
+      if (scrollAmount >= track.scrollWidth / 2) {
+        scrollAmount = 0;
+      }
+
+      track.style.transform = `translateX(-${scrollAmount}px)`;
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+  }, []);
 
   return (
-    <>
-      <div  style={{backgroundColor:"white", marginBottom: "15px", width:"fit-content "}}>
-        <p className="skills-heading">My Skills</p>
+    <div style={{ marginBottom: "20px", width: "100%" }}>
+      <p className="skills-heading">My Skills</p>
 
-        <div className="skills-container">
-          <div className="skills-slider">
-            <div
-              className="skills-track"
-              style={{
-                transform: `translateX(-${currentIndex * slideWidth}px)`,
-                width: `${skills.length * slideWidth}px`,
-              }}
-            >
-              {skills.map((skill, index) => (
-                <div
-                  key={index}
-                  className="skill-box"
-                  onMouseOver={() => goToSlide(index)}
-                >
-                  <div className="skill-icon-wrapper">
-                    <div className="skill-icon">{skill.icon}</div>
-                  </div>
-
-                  <div className="skill-content">
-                    <h3 className="skill-name">{skill.name}</h3>
-                  </div>
-
-                  <div className="skill-border"></div>
-                </div>
-              ))}
-            </div>
+      <div className="skills-container">
+        <div className="skills-slider">
+          <div className="skills-track infinite" ref={trackRef}>
+            {infiniteSkills.map((skill, index) => (
+              <div className="skill-box" key={index}>
+                <div className="skill-icon-wrapper">{skill.icon}</div>
+                <h3 className="skill-name">{skill.name}</h3>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -550,7 +550,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .skills-container {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 100px;
   max-width: 770px;
   overflow: hidden;
   margin: 0 auto;
@@ -567,7 +567,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .skill-box {
-  width: 100%;
+  
   min-width: 200px;
   height: 80px;
   display: flex;
@@ -596,6 +596,11 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #fff;
   padding-bottom: 25px;
 }
+.skills-track.infinite {
+  display: flex;
+  white-space: nowrap;
+  will-change: transform;
+}
 
 /* ======================== */
 /*     RESPONSIVE DESIGN    */
@@ -605,9 +610,6 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 860px;
   }
 }
-
-
-
 
 @media screen and (max-width: 1024px) {
   .skills-container {
