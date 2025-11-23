@@ -44,7 +44,8 @@
 }
 
 .Card:hover{
-border: 1.3px solid #a273c2;
+cursor: pointer;
+  border: 0.1px solid #a273c2;
 }
 
 #thing{
@@ -71,11 +72,6 @@ background-color: #242424;}
 
  }
  
-
-
-
-
-
 
 #contact-me {
   background-color: #242424;
@@ -579,11 +575,12 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
-  transition: border 0.3s ease;
+  transition: border 0.5s ease;
 }
 
 .skill-box:hover {
-  border: 2px solid #a273c2;
+  background-color: #a432f0ff;
+  color: #fff;
 }
 
 .skill-icon-wrapper {
