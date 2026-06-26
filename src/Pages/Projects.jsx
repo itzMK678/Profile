@@ -20,7 +20,7 @@ const ProjectData=[
         name: ' Skills Creative ',
         Technologies:'NEXT JS , TAILWIND CSS ',
         type: ' Website',
-        link: "https://www.skillcreatives.com/"
+        link: "https://skillcreatives-lemon.vercel.app/"
     },
      {
          image: Cars ,
