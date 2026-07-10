@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Profile from './components/Profile';
 import { Routes, Route } from "react-router-dom";
-
 import Navbar from './Pages/Navbar';
 import Footer from './Pages/Footer';
 import Aboutpage from './MainPages/Aboutpage';
@@ -18,9 +17,9 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Profile/> }/>
-        <Route path="/contact" element={<Details/>} />
+        <Route path="/Contact" element={<Details/>} />
          <Route path="/Projects" element={<ProjectPage />} />
-         <Route path="/Projects" element={ <Aboutpage />} />
+         <Route path="/About" element={ <Aboutpage />} />
       </Routes>
       <Footer/>
     </>
