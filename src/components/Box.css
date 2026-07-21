@@ -229,62 +229,116 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 
-
-/* About */
+/* ================= About Section ================= */
 
 #About {
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  gap: 12px;
+  box-sizing: border-box;
 }
 
 #about {
+  width: 100%;
+  max-width: 100%;
+  background: #242424;
   border-radius: 14px;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+
+  font-family: "Segoe UI", sans-serif;
   color: #727272;
   font-size: 16px;
-  font-weight: 100;
-  width: 100%;
-  background-color: #242424;
-  box-sizing: border-box;
-  padding: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
-/* Smaller Tablets */
-@media screen and (max-width: 768px) {
+#about p {
+  margin-bottom: 16px;
+}
+
+#about p:last-child {
+  margin-bottom: 0;
+}
+
+/* ================= Tablets ================= */
+
+@media screen and (max-width: 992px) {
   #about {
-    width: 100%;
+    padding: 18px;
     font-size: 15px;
+    line-height: 1.7;
   }
 }
 
-/* Phones */
+/* ================= Mobile ================= */
+
+@media screen and (max-width: 768px) {
+  #About {
+    gap: 10px;
+  }
+
+  #about {
+    padding: 16px;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+
+  #About > p:first-child {
+    font-size: 13px;
+  }
+}
+
+/* ================= Small Phones ================= */
+
 @media screen and (max-width: 480px) {
+  #About {
+    width: 100%;
+  }
+
   #about {
     width: 100%;
+    padding: 14px;
     font-size: 14px;
-    padding: 12px;
+    line-height: 1.6;
+    border-radius: 10px;
   }
 
-  #About p:first-child {
-    font-size: 13px;
-    text-align: center;
+  #About > p:first-child {
+    font-size: 12px;
+    text-align: left;
   }
 }
 
+/* ================= Very Small Phones ================= */
 
 @media screen and (max-width: 360px) {
   #about {
-    /* width: 200px; */
-    width: 100%;
+    padding: 12px;
     font-size: 13px;
-    padding: 10px;
+    line-height: 1.6;
   }
 }
 
+/* ================= Extra Small Devices ================= */
 
-/* ///////////////////////////////////////////// */
+@media screen and (max-width: 320px) {
+  #about {
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #About > p:first-child {
+    font-size: 11px;
+  }
+}
+
+/* /////////////////////////////////////////// */ 
 
 .skills-timeline-container {
   height: max-content;
@@ -923,9 +977,7 @@ body {
   width: 300px;
   margin-left: 20px;
 }
-#about{
-  width:20px ;
-}
+
 }
 @media screen and (max-width: 340px){
     .Pcard {
