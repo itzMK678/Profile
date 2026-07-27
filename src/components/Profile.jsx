@@ -132,9 +132,9 @@ const Test = () => {
                       <img src={Mypic} alt="Profile" />
                     </div>
                     <p id="name">Mamoon Khaliq</p>
-                    <p>Front-end Webdeveloper</p>
+                    <p>Full-Stack Web developer</p>
                     <p>
-                      <i className="fa-solid fa-location-pin"></i> Haroonabad, Pakistan
+                      <i className="fa-solid fa-location-pin"></i> Lahore, Pakistan
                     </p>
                   </div>
                   <div id="links">

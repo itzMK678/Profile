@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from "react-helmet-async";
 import Skills from '../Pages/Skills'
 import SkillsIcon from '../Pages/SkillsIcon'
-
+import About from"../components/About"
 const Aboutpage = () => {
   return (
     <>
@@ -37,6 +37,7 @@ const Aboutpage = () => {
 />
 <meta name="twitter:image" content="https://yourportfolio.com/preview.png" />
       </Helmet>
+      <About/>
    <SkillsIcon/> 
     <Skills/>
     </>
