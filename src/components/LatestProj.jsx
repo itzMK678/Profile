@@ -15,8 +15,11 @@ const LatestProj = () => {
       <details>
         <summary onClick={handleClick}>See my Latest Project</summary>
         <div>
-          <p>CarsRalley is a MERN Stack event booking website with Stripe payments and a calendar-based scheduling system. </p>
-          <a href="https://racefusion.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <p>
+MK Tours is a modern tourism website built with <strong>Next.js</strong>, designed for the Pakistani market. It features <strong>WhatsApp integration</strong> for seamless customer communication and <strong>GSAP animations</strong> to deliver a smooth and engaging user experience.
+</p>
+
+          <a href="https://my-journey-wine.vercel.app/" target="_blank" rel="noopener noreferrer">
             <button >See project</button>
           </a>
         </div>
