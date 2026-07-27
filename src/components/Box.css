@@ -752,7 +752,7 @@ body {
  
   display: flex;
   flex-direction: column;
-  /
+  
 }
 
 #SecondDiv {
@@ -940,7 +940,7 @@ body {
 @media screen and (max-width: 480px) {
   #SecPart{
   width: 400px;
-/
+
 }}
 @media screen and (max-width: 480px) {
   #SecPart{

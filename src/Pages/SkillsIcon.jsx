@@ -3,19 +3,32 @@ import "../components/Box.css";
 
 const SkillsIcon = () => {
   const trackRef = useRef(null);
-
-  const skills = [
-    { name: "C++", icon: "💻" },
-    { name: "HTML5", icon: "🌐" },
-    { name: "CSS3", icon: "🎨" },
-    { name: "JavaScript", icon: "⚡" },
-    { name: "React.js", icon: "⚛️" },
-    { name: "Redux", icon: "📦" },
-    { name: "Git", icon: "🔧" },
-    { name: "Node.js", icon: "🟢" },
-    { name: "Express.js", icon: "🚀" },
-    { name: "MongoDB", icon: "🍃" },
-  ];
+const skills = [
+  { name: "C++", icon: "💻" },
+  { name: "Python", icon: "🐍" },
+  { name: "HTML5", icon: "🌐" },
+  { name: "CSS3", icon: "🎨" },
+  { name: "JavaScript", icon: "⚡" },
+  { name: "React.js", icon: "⚛️" },
+  { name: "Next.js", icon: "▲" },
+  { name: "Tailwind CSS", icon: "💨" },
+  { name: "Node.js", icon: "🟢" },
+  { name: "Express.js", icon: "🚀" },
+  { name: "MongoDB", icon: "🍃" },
+  { name: "MySQL", icon: "🗄️" },
+  { name: "Supabase", icon: "🟩" },
+  { name: "Firebase", icon: "🔥" },
+  { name: "Git", icon: "🔧" },
+  { name: "GitHub", icon: "🐙" },
+  { name: "REST API", icon: "🔗" },
+  { name: "JWT", icon: "🔐" },
+  { name: "Socket.IO", icon: "📡" },
+  { name: "GSAP", icon: "✨" },
+  { name: "Postman", icon: "📬" },
+  { name: "Selenium", icon: "🤖" },
+  { name: "Pandas", icon: "🐼" },
+  { name: "BeautifulSoup", icon: "🥣" },
+];
 
   // duplicate array for infinite loop
   const infiniteSkills = [...skills, ...skills];
