@@ -14,13 +14,12 @@ import Flappybird from "../assets/FlappyBird.png";
 import Luxe from "../assets/LuxeHotel.png";
 import McDonald from "../assets/McDonald.png";
 import Tour from "../assets/MkTours.png";
-import "../components/Box.css";
 import ProjectsCard from "../components/ProjectsCard";
 
 const Category = ["All", "Website", "Tools", "Game"];
 
 const ProjectData = [
-     {
+  {
     image: Tour,
     name: "Mk Tours",
     Technologies: "Next JS , TAILWIND CSS,Node",
@@ -86,7 +85,7 @@ const ProjectData = [
   {
     image: Samsung,
     name: "Samsung Website",
-    Technologies: "HTML , CSS , JS",    
+    Technologies: "HTML , CSS , JS",
     type: "Website",
     link: "https://itzmk678.github.io/samsung/",
   },
@@ -104,19 +103,21 @@ const ProjectData = [
     type: "Game",
     link: "https://itzmk678.github.io/brick-breaker/",
   },
-   {
+  {
     image: Flappybird,
     name: "Flappy Bird",
     Technologies: "HTML , CANVAS",
     type: "Game",
     link: "https://itzmk678.github.io/flappy-bird/",
-  }, {
+  },
+  {
     image: Luxe,
     name: "Luxe Hotel",
     Technologies: "Next JS , TAILWIND CSS,Node",
     type: "Website",
     link: "https://luke-hotel-95dq.vercel.app//",
-  }, {
+  },
+  {
     image: McDonald,
     name: "McDonald's Website",
     Technologies: "Html , CSS , JS",
@@ -128,7 +129,6 @@ const ProjectData = [
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // Filter projects
   const filteredProjects =
     selectedCategory === "All"
       ? ProjectData
@@ -138,28 +138,19 @@ const Projects = () => {
 
   return (
     <>
-      <p style={{ color: "#a432f0ff" }}>Projects</p>
+      <p className="text-[#a432f0ff]">Projects</p>
 
       {/* Category Buttons */}
       <div>
         {Category.map((item, index) => (
           <div
             key={index}
-            className="box"
-            style={{
-              display: "inline-block",
-              border: "0.5px solid rgb(138,0,230)",
-              width: "70px",
-              textAlign: "center",
-              margin: "10px",
-              padding: "10px",
-              borderRadius: "22px",
-              color: "#fff",
-              cursor: "pointer",
-              backgroundColor:
-                selectedCategory === item ? "#8a00e6" : "black",
-            }}
             onClick={() => setSelectedCategory(item)}
+            className={`inline-block w-[70px] text-center m-[10px] p-[10px] rounded-[22px] text-white cursor-pointer border border-[rgb(138,0,230)] ${
+              selectedCategory === item
+                ? "bg-[#8a00e6]"
+                : "bg-black"
+            }`}
           >
             {item}
           </div>
@@ -167,16 +158,7 @@ const Projects = () => {
       </div>
 
       {/* Projects */}
-      <div
-        className="projects"
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "10px",
-          width: "100%",
-          justifyContent: "center",
-        }}
-      >
+      <div className="flex flex-wrap gap-[10px] w-full justify-center">
         {filteredProjects.map((item, index) => (
           <ProjectsCard
             key={index}

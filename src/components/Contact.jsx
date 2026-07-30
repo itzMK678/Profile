@@ -1,5 +1,5 @@
-import React from 'react';
-import Box from './Box';
+import React from "react";
+import Box from "./Box";
 
 const dataList = [
   {
@@ -20,19 +20,27 @@ const dataList = [
   {
     name: "Whatsapp",
     icon: <i className="fa-brands fa-whatsapp"></i>,
-    link: "https://wa.me/923326325661", // Pakistan country code added
+    link: "https://wa.me/923326325661",
   },
 ];
 
 const Contact = () => {
   return (
     <>
-    <p style={{color: ' #a432f0ff',fontSize: '14px',opacity:"70%",}}>My Socialmedia</p>
-    <div  style={{ display: "flex",  flexWrap: "wrap" ,justifyContent:"space-around",}}>
-      {dataList.map((item, index) => (
-        <Box key={index} name={item.name} icon={item.icon} link={item.link} />
-      ))}
-    </div>
+      <p className="text-[#a432f0ff] text-[15px] opacity-70">
+        My Socialmedia
+      </p>
+
+      <div className="flex flex-wrap justify-around">
+        {dataList.map((item, index) => (
+          <Box
+            key={index}
+            name={item.name}
+            icon={item.icon}
+            link={item.link}
+          />
+        ))}
+      </div>
     </>
   );
 };
