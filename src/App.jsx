@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-// import PixelSnow from "./effects/PixelSnow";
+import PixelSnow from "./effects/PixelSnow";
 
 import Navbar from "./Pages/Navbar";
 import Footer from "./Pages/Footer";
@@ -17,15 +17,23 @@ function App() {
     <div className="relative min-h-screen overflow-x-hidden bg-black">
 
       {/* Background Effect */}
-      {/* <div className="fixed inset-0 z-0 pointer-events-none">
+      <div className="fixed inset-0 z-0 pointer-events-none">
         <PixelSnow
-          color="#780bbf"
-          speed={0.2}
-          density={0.6}
-          variant="snowflake"
+           color="#ffffff"
+    flakeSize={0.01}
+    minFlakeSize={0.01}
+    pixelResolution={1000}
+    speed={0.01}
+    density={0.3}
+    direction={230}
+    brightness={1.9}
+    depthFade={13}
+    farPlane={20}
+    gamma={0.4545}
+    variant="snowflake"
           className="w-full h-full"
         />
-      </div> */}
+      </div>
 
       {/* Website */}
       <div className="relative z-10">

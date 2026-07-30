@@ -9,7 +9,7 @@ const LatestProj = () => {
 
   return (
     <div
-      className="mt-5 flex w-full flex-col text-base text-[#c1c1c1]
+      className=" mt-5 flex w-full flex-col text-base text-[#c1c1c1]
                  max-[480px]:px-2.5 max-[480px]:text-sm
                  max-[380px]:text-[13px]"
       style={{ paddingBottom }}
@@ -19,7 +19,7 @@ const LatestProj = () => {
           See my Latest Project
         </summary>
 
-        <div className="mt-4 flex flex-wrap justify-between gap-3 rounded-md bg-[#242424] max-[768px]:flex-col max-[768px]:items-start">
+        <div className="mt-4 flex flex-wrap justify-between gap-3 rounded-md bg-gradient-to-br from-[#8c21d3]/20 to-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(140,33,211,0.25)] max-[768px]:flex-col max-[768px]:items-start">
           <p>
             MK Tours is a modern tourism website built with{" "}
             <strong>Next.js</strong>, designed for the Pakistani market. It

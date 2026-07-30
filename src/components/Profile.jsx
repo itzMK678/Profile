@@ -122,7 +122,7 @@ const Test = () => {
             Profile
           </p>
 
-          <div className="sticky top-5 z-10 flex flex-col items-center w-[380px] rounded-2xl bg-[#242424] p-5 mb-5 mr-[10px] cursor-pointer">
+          <div className="sticky top-5 z-10 flex flex-col items-center w-[380px] rounded-2xl bg-[#2d2d2dcc] p-5 mb-5 mr-[10px] cursor-pointer">
             <div className="pt-[15px] flex flex-col items-center w-full">
               <div className="mt-[15px] mb-[10px] h-[120px] w-[120px] overflow-hidden rounded-full border-2 border-[#8c21d3]">
                 <img
