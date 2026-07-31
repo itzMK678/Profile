@@ -118,7 +118,8 @@ const Test = () => {
       <div className="w-full flex box-border pt-[15px]">
         {/* Left Side */}
         <div className="w-[35%] flex items-center flex-col">
-          <p className="text-start bg-red-400 text-[14px] opacity-70">
+          
+          <p className="pl-14 text-[#8c21d3] w-full text-left text-[16px] ">
             Profile
           </p>
 
@@ -152,7 +153,7 @@ const Test = () => {
                   <li
                     key={c.tab}
                     onClick={() => setActive(c.tab)}
-                    className={`my-[10px] cursor-pointer border-b border-[#3c3c3c] pb-2 text-[16px] transition-colors duration-300 hover:text-[#a273c2] ${
+                    className={`my-[10px] cursor-pointer border-b border-[#3c3c3c] pb-2 text-[16px] transition-colors duration-300 hover:pl-2 hover:text-[#a273c2] ${
                       active === c.tab
                         ? "text-[#8c21d3]"
                         : "text-[#c1c1c1]"

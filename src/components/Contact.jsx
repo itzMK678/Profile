@@ -27,7 +27,7 @@ const dataList = [
 const Contact = () => {
   return (
     <>
-      <p className="text-[#a432f0ff] text-[15px] opacity-70">
+      <p className="text-[#a432f0ff] text-[16px] ">
         My Socialmedia
       </p>
 

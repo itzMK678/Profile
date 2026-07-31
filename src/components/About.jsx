@@ -4,12 +4,12 @@ const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div id="About" className="w-full flex flex-col gap-3">
-      <p className="text-[#8c21d3] text-[16px] opacity-70">Introduction</p>
+    <div id="About" className="w-full flex flex-col ">
+      <p className="text-[#8c21d3] text-[16px] ">Introduction</p>
 
       <div
         id="about"
-        className="relative overflow-hidden w-full rounded-[14px] bg-[#242424] p-5 text-[18px] font-light leading-[1.8] text-[#727272]
+        className="relative overflow-hidden w-full rounded-[14px] bg-[#2d2d2dcc] p-5 text-[18px] font-light leading-[1.8] text-[#727272]
                    md:p-[18px] md:text-[16px] md:leading-[1.7]
                    sm:rounded-xl sm:p-4 sm:text-[15px]
                    max-[480px]:rounded-[10px] max-[480px]:p-[14px] max-[480px]:text-[14px] max-[480px]:leading-[1.6]

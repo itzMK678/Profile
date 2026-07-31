@@ -7,7 +7,7 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
       id="ProjectsCard"
       style={{
         height: "300px",
-        backgroundColor: " #242424",
+        backgroundColor: " #2d2d2dcc",
         width: "360px",
         borderRadius: "8px",
         overflow: "hidden",
@@ -65,6 +65,7 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
           fontSize: "12px",
           marginLeft: "15px",
           cursor: "pointer",
+          color:"white"
         }}
       >
         Technologies : {Technologies}

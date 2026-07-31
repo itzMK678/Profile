@@ -53,7 +53,7 @@ const SkillsIcon = () => {
 
   return (
     <div className="w-full mb-5">
-      <p className="mb-2.5 text-[15px] text-purple-500 opacity-70">
+      <p className="mb-2.5 mt-2 text-[16px] text-purple-500">
         My Skills
       </p>
 
@@ -87,7 +87,7 @@ const SkillsIcon = () => {
                   flex-col
                   items-center
                   rounded-xl
-                  bg-[#1e1e1e]
+                  bg-[#2d2d2dcc]
                   p-3.5
                   text-center
                   shadow-lg
