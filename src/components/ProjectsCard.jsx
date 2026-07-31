@@ -4,15 +4,7 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
   return (
   
     <div
-      id="ProjectsCard"
-      style={{
-        height: "300px",
-        backgroundColor: " #2d2d2dcc",
-        width: "360px",
-        borderRadius: "8px",
-        overflow: "hidden",
-        marginTop:"10px",
-      }}
+     className="max-h-[300px] w-[360px] bg-[#2d2d2dcc] rounded-lg overflow-hidden mt-[10px] border border-black hover:border-1 hover:border-[#8a00e6]"
     >
       <div
         className="image"
@@ -38,7 +30,7 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
         id="name"
         style={{
           marginTop: "-4px",
-          fontSize: "16px",
+          fontSize: "18px",
           fontWeight: "600",
           marginLeft: "15px",
           color: "#a432f0ff",
@@ -51,9 +43,10 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
       <p
         style={{
           marginTop: "-4px",
-          fontSize: "12px",
+          fontSize: "14px",
           marginLeft: "15px",
           cursor: "pointer",
+          color:"white"
         }}
       >
         Type:{type}
@@ -61,8 +54,9 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
       </div>
       <p
         style={{
-          marginTop: "-6px",
-          fontSize: "12px",
+          marginTop: "-2px",
+          paddingBottom: "10px",
+          fontSize: "14px",
           marginLeft: "15px",
           cursor: "pointer",
           color:"white"

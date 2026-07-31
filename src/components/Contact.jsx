@@ -31,7 +31,7 @@ const Contact = () => {
         My Socialmedia
       </p>
 
-      <div className="flex flex-wrap justify-around">
+      <div className=" flex flex-wrap justify-around">
         {dataList.map((item, index) => (
           <Box
             key={index}

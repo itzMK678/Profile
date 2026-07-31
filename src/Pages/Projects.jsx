@@ -146,7 +146,7 @@ const Projects = () => {
           <div
             key={index}
             onClick={() => setSelectedCategory(item)}
-            className={`inline-block w-[70px] text-center m-[10px] p-[10px] rounded-[22px] text-white cursor-pointer border border-[rgb(138,0,230)] ${
+            className={`inline-block w-[100px] text-center m-[10px] p-[10px] rounded-[22px] text-white cursor-pointer border border-[rgb(138,0,230)] ${
               selectedCategory === item
                 ? "bg-[#8a00e6]"
                 : "bg-black"
@@ -158,7 +158,7 @@ const Projects = () => {
       </div>
 
       {/* Projects */}
-      <div className="flex flex-wrap gap-[10px] w-full justify-center">
+      <div className="flex flex-wrap gap-[10px] w-full justify-evenly">
         {filteredProjects.map((item, index) => (
           <ProjectsCard
             key={index}

@@ -115,63 +115,61 @@ const Test = () => {
         </script>
       </Helmet>
 
-      <div className="w-full flex box-border pt-[15px]">
-        {/* Left Side */}
-        <div className="w-[35%] flex items-center flex-col">
-          
-          <p className="pl-14 text-[#8c21d3] w-full text-left text-[16px] ">
-            Profile
-          </p>
+     <div className="w-full flex flex-col lg:flex-row box-border pt-4 gap-5">
+  {/* Left Side */}
+  <div className="mx-4 w-full md:w-full lg:w-[33%] flex flex-col items-center">
+    <p className="w-full pl-4 lg:pl-4 text-left text-[16px] text-[#8c21d3]">
+      Profile
+    </p>
 
-          <div className="sticky top-5 z-10 flex flex-col items-center w-[380px] rounded-2xl bg-[#2d2d2dcc] p-5 mb-5 mr-[10px] cursor-pointer">
-            <div className="pt-[15px] flex flex-col items-center w-full">
-              <div className="mt-[15px] mb-[10px] h-[120px] w-[120px] overflow-hidden rounded-full border-2 border-[#8c21d3]">
-                <img
-                  src={Mypic}
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              <p className="text-[18px] text-[#c1c1c1] hover:text-purple-500">
-                Mamoon Khaliq
-              </p>
-
-              <p className="m-0 text-[16px] text-[#727272] hover:text-purple-500">
-                Full-Stack Web developer
-              </p>
-
-              <p className="m-0 text-[16px] text-[#727272] hover:text-purple-500">
-                <i className="fa-solid fa-location-pin"></i> Lahore,
-                Pakistan
-              </p>
-            </div>
-
-            <div className="mt-[30px] ml-[10px]  w-[290px]">
-              <ul className="m-0 list-none p-0">
-                {menu.map((c) => (
-                  <li
-                    key={c.tab}
-                    onClick={() => setActive(c.tab)}
-                    className={`my-[10px] cursor-pointer border-b border-[#3c3c3c] pb-2 text-[16px] transition-colors duration-300 hover:pl-2 hover:text-[#a273c2] ${
-                      active === c.tab
-                        ? "text-[#8c21d3]"
-                        : "text-[#c1c1c1]"
-                    }`}
-                  >
-                    {c.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+    <div className="w-full min-w-[380px] lg:sticky lg:top-5 z-10 flex flex-col items-center rounded-2xl bg-[#2d2d2dcc] p-5 cursor-pointer">
+      <div className="pt-4 flex flex-col items-center w-full">
+        <div className="mt-4 mb-3 h-[120px] w-[120px] overflow-hidden rounded-full border-2 border-[#8c21d3]">
+          <img
+            src={Mypic}
+            alt="Profile"
+            className="w-full h-full object-cover"
+          />
         </div>
 
-        {/* Right Side */}
-        <div className="w-[65%] mr-[10px]">
-          {content}
-        </div>
+        <p className="text-[18px] text-[#c1c1c1] hover:text-purple-500">
+          Mamoon Khaliq
+        </p>
+
+        <p className="text-[16px] text-[#727272] hover:text-purple-500">
+          Full-Stack Web Developer
+        </p>
+
+        <p className="text-[16px] text-[#727272] hover:text-purple-500 text-center">
+          <i className="fa-solid fa-location-pin"></i> Lahore, Pakistan
+        </p>
       </div>
+
+      <div className="mt-8 w-full">
+        <ul className="list-none p-0">
+          {menu.map((c) => (
+            <li
+              key={c.tab}
+              onClick={() => setActive(c.tab)}
+              className={`my-3 cursor-pointer border-b border-[#3c3c3c] pb-2 transition-all duration-300 hover:pl-2 hover:text-[#a273c2] ${
+                active === c.tab
+                  ? "text-[#8c21d3]"
+                  : "text-[#c1c1c1]"
+              }`}
+            >
+              {c.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  {/* Right Side */}
+  <div className="mx-4 w-full lg:w-[67%]">
+    {content}
+  </div>
+</div>
     </>
   );
 };
