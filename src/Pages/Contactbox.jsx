@@ -43,9 +43,9 @@ ${message.messageText}
     <>
       <form onSubmit={handleSubmit}>
         <p className="text-[16px] mt-5 text-[#8c21d3]">Contact for Queries</p>
-        <div className="bg-[#2d2d2dcc] rounded-lg w-[95%] max-w-[1000px] mx-auto  p-5 flex flex-col items-center">
+        <div className="bg-[#2d2d2dcc] rounded-lg  mx-auto  p-5 flex flex-col items-center">
           <div className="flex flex-row justify-evenly items-start  w-full p-[20px_10px_10px_10px] flex-wrap">
-            <div className="flex flex-col gap-[15px] w-full max-w-[400px] items-start">
+            <div className="flex flex-col gap-[15px] w-full w-full my-2 max-w-[400px] items-start">
               <input
                 name="name"
                 type="text"
@@ -78,21 +78,22 @@ ${message.messageText}
                 className="h-10 w-full bg-transparent border border-[#8c21d3] p-[5px] rounded text-[#8c21d3] text-[14px] outline-none focus:text-white focus:border-2"
               />
 
-              <button className="w-[150px] h-[35px] mt-[10px] bg-[#8c21d3] rounded-md text-[#c1c1c1] text-[15px] font-[200] cursor-pointer">
-                Send now
-              </button>
-            </div>
+             </div>
 
-            <div className="w-full max-w-[390px]">
+            <div className="w-full my-2 max-w-[390px]">
               <textarea
                 name="messageText"
                 placeholder="Message for me"
                 rows="6"
                 onChange={handleChange}
-                className="w-full h-[225px] bg-transparent border border-[#8c21d3] rounded p-[5px] text-[#8c21d3] text-[14px] resize-none outline-none focus:text-white focus:border-2"
+                className="w-full h-full min-h-[207px] bg-transparent border border-[#8c21d3] rounded p-[5px] text-[#8c21d3] text-[14px] resize-none outline-none focus:text-white focus:border-2"
               />
             </div>
           </div>
+           <button className="min-w-[150px] w-full h-[35px] my-[10px] bg-[#8c21d3] rounded-md text-[#c1c1c1] text-[15px] font-[200] cursor-pointer">
+                Send now
+              </button>
+            
         </div>
       </form>
     </>

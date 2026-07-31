@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="flex justify-between bg-[#8c21d3ff] h-[100px] p-5">
       {/* Logo */}
       <div
-        className="w-[100px] h-[90px] bg-cover bg-center bg-no-repeat"
+        className="w-[100px] h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${image})` }}
       ></div>
 
@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="flex">
         <a href="Resume.pdf" download>
           <button
-            className="h-[40px] w-[100px] rounded-[8px] border border-white mt-[18px] cursor-pointer bg-white text-[#8c21d3ff] transition-all duration-300 hover:bg-[#ad3df8ff] hover:text-white"
+            className="h-full w-full rounded-[8px] p-2 border border-white  cursor-pointer bg-white text-[#8c21d3ff] transition-all duration-300 hover:bg-[#ad3df8ff] hover:text-white"
           >
             Download CV
           </button>
