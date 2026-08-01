@@ -119,7 +119,7 @@ const Skills = () => {
                   {skill.date}
                 </p>
 
-                <p className="mt-2 text-[45px] leading-6 text-gray-300 md:text-[16px]">
+                <p className="mt-2 text-[16px] leading-6 text-gray-300 ">
                   {skill.description}
                 </p>
               </div>
