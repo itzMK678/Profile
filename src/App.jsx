@@ -11,11 +11,12 @@ import Profile from "./components/Profile";
 import Details from "./MainPages/Details";
 import Aboutpage from "./MainPages/Aboutpage";
 import ProjectPage from "./MainPages/ProjectPage";
+import ShipCursor from "./effects/ShipCursor";
 
 function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-black">
-
+<ShipCursor />
       {/* Background Effect */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <PixelSnow
