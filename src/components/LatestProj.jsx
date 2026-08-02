@@ -15,11 +15,11 @@ const LatestProj = () => {
       style={{ paddingBottom }}
     >
       <details className="w-[99%] cursor-pointer rounded-md bg-[#2d2d2dcc] px-2 py-2 text-base max-[480px]:w-[98%] max-[480px]:p-2.5 max-[480px]:text-sm max-[380px]:max-w-[330px] max-[320px]:max-w-[270px] max-[320px]:w-full max-[320px]:p-2">
-        <summary onClick={handleClick}>
+        <summary className="hover:text-[#a432f0]" onClick={handleClick}>
           See my Latest Project
         </summary>
 
-        <div className="mt-4 flex flex-wrap justify-between gap-3 rounded-md max-[768px]:flex-col max-[768px]:items-start">
+        <div className="hover:text-[#a432f0] mt-4 flex flex-wrap justify-between gap-3 rounded-md max-[768px]:flex-col max-[768px]:items-start">
           <p>
             MK Tours is a modern tourism website built with{" "}
             <strong>Next.js</strong>, designed for the Pakistani market. It
