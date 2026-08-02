@@ -1,4 +1,8 @@
 import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { Draggable } from "gsap/Draggable";
+
+gsap.registerPlugin(Draggable);
 
 const SkillsIcon = () => {
   const trackRef = useRef(null);
@@ -35,25 +39,57 @@ const SkillsIcon = () => {
   useEffect(() => {
     const track = trackRef.current;
 
-    let scrollAmount = 0;
+    let x = 0;
+    let dragging = false;
 
-    const animate = () => {
-      scrollAmount += 1;
+    const speed = 1;
 
-      if (scrollAmount >= track.scrollWidth / 2) {
-        scrollAmount = 0;
+    const update = () => {
+      if (!dragging) {
+        x -= speed;
+
+        const halfWidth = track.scrollWidth / 2;
+
+        if (Math.abs(x) >= halfWidth) {
+          x = 0;
+        }
+
+        gsap.set(track, {
+          x,
+        });
       }
-
-      track.style.transform = `translateX(-${scrollAmount}px)`;
-      requestAnimationFrame(animate);
     };
 
-    requestAnimationFrame(animate);
+    gsap.ticker.add(update);
+
+    const draggable = Draggable.create(track, {
+      type: "x",
+      edgeResistance: 0.85,
+      inertia: true, // Remove this if you don't have InertiaPlugin
+
+      onPress() {
+        dragging = true;
+      },
+
+      onDrag() {
+        x = this.x;
+      },
+
+      onRelease() {
+        x = this.x;
+        dragging = false;
+      },
+    })[0];
+
+    return () => {
+      gsap.ticker.remove(update);
+      draggable.kill();
+    };
   }, []);
 
   return (
     <div className="w-full mb-5">
-      <p className="mb-2.5 mt-2 text-[16px] text-purple-500">
+      <p className="mt-2 mb-2.5 text-[16px] text-purple-500">
         My Skills
       </p>
 
@@ -63,8 +99,8 @@ const SkillsIcon = () => {
           flex
           w-full
           max-w-[240px]
-          overflow-hidden
           justify-start
+          overflow-hidden
           sm:max-w-[300px]
           md:max-w-[370px]
           lg:max-w-[650px]
@@ -74,7 +110,7 @@ const SkillsIcon = () => {
         <div className="w-min">
           <div
             ref={trackRef}
-            className="flex whitespace-nowrap will-change-transform"
+            className="flex whitespace-nowrap will-change-transform cursor-grab active:cursor-grabbing select-none"
           >
             {infiniteSkills.map((skill, index) => (
               <div
@@ -95,12 +131,12 @@ const SkillsIcon = () => {
                   duration-300
                   hover:bg-purple-600
 
-                  lg:min-w-[200px]
-                  lg:mr-2.5
-                  lg:h-25
-
                   md:h-[120px]
                   md:w-[100px]
+
+                  lg:mr-2.5
+                  lg:h-25
+                  lg:min-w-[200px]
                 "
               >
                 <div className="mb-2 text-2xl md:text-[28px] lg:text-[32px]">
