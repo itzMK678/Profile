@@ -19,17 +19,8 @@ const Contactbox = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const whatsappMessage = `
-*New Portfolio Inquiry*
+    const whatsappMessage = ` my name is ${message.name} and I want to contact you regarding ${message.subject}. You can reach me at ${message.email} or ${message.phone}. Here is my message: ${message.messageText}`;
 
-Name: ${message.name}
-Email: ${message.email}
-Phone: ${message.phone}
-Subject: ${message.subject}
-
-Message:
-${message.messageText}
-`;
 
     window.open(
       `https://wa.me/923326325661?text=${encodeURIComponent(
