@@ -102,8 +102,8 @@ const SkillsIcon = () => {
               className="
                 mr-3
                 flex
-                h-[110px]
-                min-w-[120px]
+                h-[100px]
+                min-w-[110px]
                 flex-col
                 items-center
                 justify-center
@@ -120,8 +120,8 @@ const SkillsIcon = () => {
                 md:h-[120px]
                 md:min-w-[160px]
 
-                lg:h-[120px]
-                lg:min-w-[180px]
+                lg:h-[110px]
+                lg:min-w-[170px]
               "
             >
               <div className="mb-2 text-3xl">
