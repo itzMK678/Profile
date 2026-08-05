@@ -185,9 +185,10 @@ export default function PixelSnow({
   className = '',
   style = {}
 }) {
-  const containerRef = useRef(null);
+const containerRef = useRef(null);
   const animationRef = useRef(0);
   const isVisibleRef = useRef(true);
+  const isTabActiveRef = useRef(true);
   const rendererRef = useRef(null);
   const materialRef = useRef(null);
   const resizeTimeoutRef = useRef(null);
@@ -221,7 +222,7 @@ export default function PixelSnow({
     }, 100);
   }, []);
 
-  // Visibility observer
+// Visibility observer
   useEffect(() => {
     const container = containerRef.current;
     if (!container) return;
@@ -235,6 +236,15 @@ export default function PixelSnow({
 
     observer.observe(container);
     return () => observer.disconnect();
+  }, []);
+
+  // Pause rendering when the browser tab is hidden to save CPU/GPU
+  useEffect(() => {
+    const handleVisibility = () => {
+      isTabActiveRef.current = document.visibilityState === 'visible';
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+    return () => document.removeEventListener('visibilitychange', handleVisibility);
   }, []);
 
   // Main Three.js setup - only runs once
@@ -253,7 +263,10 @@ export default function PixelSnow({
       depth: false
     });
 
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+// Adaptive pixel ratio: cap at 2 on desktop, 1.5 on mobile/low-power devices
+    const isMobile = window.innerWidth <= 768;
+    const maxRatio = isMobile ? 1.5 : 2;
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, maxRatio));
     renderer.setSize(container.offsetWidth, container.offsetHeight);
     renderer.setClearColor(0x000000, 0);
     container.appendChild(renderer.domElement);
@@ -291,8 +304,8 @@ export default function PixelSnow({
     const animate = () => {
       animationRef.current = requestAnimationFrame(animate);
 
-      // Only render if visible
-      if (isVisibleRef.current) {
+// Only render if visible AND the tab is active
+      if (isVisibleRef.current && isTabActiveRef.current) {
         material.uniforms.uTime.value = (performance.now() - startTime) * 0.001;
         renderer.render(scene, camera);
       }

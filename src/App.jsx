@@ -19,7 +19,7 @@ function App() {
 <ShipCursor />
       {/* Background Effect */}
       <div className="fixed inset-0 z-0 pointer-events-none">
-        <PixelSnow
+<PixelSnow
            color="#ffffff"
     flakeSize={0.01}
     minFlakeSize={0.01}

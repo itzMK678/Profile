@@ -4,7 +4,7 @@ const ProjectsCard = ({ image, name, type, Technologies, link }) => {
   return (
   
     <div
-     className="max-h-[300px] max-w-[360px] bg-[#2d2d2dcc] rounded-lg overflow-hidden mt-[10px] border border-black hover:border-1 hover:border-[#8a00e6]"
+     className="max-h-[300px] w-[360px] bg-[#2d2d2dcc] rounded-lg overflow-hidden mt-[10px] border border-black hover:border-1 hover:border-[#8a00e6]"
     >
       <div
         className="image"
