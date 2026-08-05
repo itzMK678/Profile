@@ -122,7 +122,7 @@ const Test = () => {
       Profile
     </p>
 
-    <div className="w-full min-w-[380px] lg:sticky lg:top-5 z-10 flex flex-col items-center rounded-2xl bg-[#2d2d2dcc] p-5 cursor-pointer">
+    <div className="w-full  lg:sticky lg:top-5 z-10 flex flex-col items-center rounded-2xl bg-[#2d2d2dcc] p-5 cursor-pointer">
       <div className="pt-4 flex flex-col items-center w-full">
         <div className="mt-4 mb-3 h-[120px] w-[120px] overflow-hidden rounded-full border-2 border-[#8c21d3]">
           <img
@@ -166,7 +166,7 @@ const Test = () => {
   </div>
 
   {/* Right Side */}
-  <div className="mx-4 w-full lg:w-[67%]">
+  <div className="mx-4 mr-2 w-full lg:w-[67%]">
     {content}
   </div>
 </div>
