@@ -115,10 +115,10 @@ const Test = () => {
         </script>
       </Helmet>
 
-     <div className="w-full flex flex-col lg:flex-row box-border pt-4 gap-5">
+    <div className="w-full flex flex-col lg:flex-row box-border pt-4">
   {/* Left Side */}
-  <div className="mx-4 w-full md:w-full lg:w-[33%] flex flex-col items-center">
-    <p className="w-full pl-4 lg:pl-4 text-left text-[16px] text-[#8c21d3]">
+  <div className="px-4 w-full flex flex-col items-center">
+     <p className="w-full pl-4 lg:pl-4 text-left text-[16px] text-[#8c21d3]">
       Profile
     </p>
 
@@ -166,7 +166,7 @@ const Test = () => {
   </div>
 
   {/* Right Side */}
-  <div className="mx-4 mr-2 w-full lg:w-[67%]">
+  <div className="mx-2 w-full lg:w-[67%]">
     {content}
   </div>
 </div>

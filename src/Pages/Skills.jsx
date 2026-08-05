@@ -84,13 +84,13 @@ const Skills = () => {
   };
 
   return (
-    <div className="w-full max-w-[950px] font-sans lg:w-[90%] md:w-[98%] md:p-4 sm:w-[94%] sm:p-2">
+    <div className="w-full max-w-[950px] font-sans  md:p-4 sm:p-2">
       <div>
         <h2 className="my-6 text-center text-xl font-light text-gray-300 transition hover:text-purple-500 sm:text-base">
           My Skills Journey
         </h2>
 
-        <div className="relative mr-4 pl-10 before:absolute before:left-[30px] before:top-0 before:bottom-0 before:w-px before:bg-purple-500 sm:pl-8 sm:before:left-5">
+        <div className="relative pl-10 before:absolute before:left-[30px] before:top-0 before:bottom-0 before:w-px before:bg-purple-500 sm:pl-8 sm:before:left-5">
           {skillsOBJ.map((skill, index) => (
             <div
               key={index}

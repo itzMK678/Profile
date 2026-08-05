@@ -35,7 +35,13 @@ const Contactbox = () => {
       <form onSubmit={handleSubmit}>
         <p className="text-[16px] mt-5 text-[#8c21d3]">Contact for Queries</p>
         <div className="bg-[#2d2d2dcc] rounded-lg  mx-auto  p-5 flex flex-col items-center">
-          <div className="flex flex-row justify-evenly items-start  w-full p-[20px_10px_10px_10px] flex-wrap">
+          <div className="flex
+flex-col
+lg:flex-row
+justify-evenly
+items-start
+w-full
+gap-5">
             <div className="flex flex-col gap-[15px] w-full w-full my-2 max-w-[400px] items-start">
               <input
                 name="name"

@@ -15,7 +15,7 @@ import ShipCursor from "./effects/ShipCursor";
 
 function App() {
   return (
-    <div className="relative min-h-screen overflow-x-hidden bg-black">
+    <div className="relative min-h-full overflow-x-hidden bg-black">
 <ShipCursor />
       {/* Background Effect */}
       <div className="fixed inset-0 z-0 pointer-events-none">

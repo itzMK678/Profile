@@ -140,13 +140,13 @@ const Projects = () => {
     <>
       <p className="text-[#a432f0ff]">Projects</p>
 
-      {/* Category Buttons */}
-      <div>
+{/* Category Buttons */}
+      <div className="flex flex-wrap gap-[10px]">
         {Category.map((item, index) => (
           <div
             key={index}
             onClick={() => setSelectedCategory(item)}
-            className={`inline-block w-[100px] text-center m-[10px] p-[10px] rounded-[22px] text-white cursor-pointer border border-[rgb(138,0,230)] ${
+            className={`text-center px-[10px] py-[10px] rounded-[22px] text-white cursor-pointer border border-[rgb(138,0,230)] ${
               selectedCategory === item
                 ? "bg-[#8a00e6]"
                 : "bg-black"

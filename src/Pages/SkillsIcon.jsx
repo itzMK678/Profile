@@ -38,10 +38,10 @@ const SkillsIcon = () => {
 
   useEffect(() => {
     const track = trackRef.current;
+    if (!track) return;
 
     let x = 0;
     let dragging = false;
-
     const speed = 1;
 
     const update = () => {
@@ -54,9 +54,7 @@ const SkillsIcon = () => {
           x = 0;
         }
 
-        gsap.set(track, {
-          x,
-        });
+        gsap.set(track, { x });
       }
     };
 
@@ -65,7 +63,7 @@ const SkillsIcon = () => {
     const draggable = Draggable.create(track, {
       type: "x",
       edgeResistance: 0.85,
-      inertia: true, // Remove this if you don't have InertiaPlugin
+      inertia: true,
 
       onPress() {
         dragging = true;
@@ -88,67 +86,53 @@ const SkillsIcon = () => {
   }, []);
 
   return (
-    <div className="w-full mb-5">
-      <p className="mt-2 mb-2.5 text-[16px] text-purple-500">
+    <div className="w-full mb-6 overflow-hidden">
+      <p className="mb-3 text-[16px] text-[#8c21d3]">
         My Skills
       </p>
 
-      <div
-        className="
-          mx-auto
-          flex
-          w-full
-          max-w-[240px]
-          justify-start
-          overflow-hidden
-          sm:max-w-[300px]
-          md:max-w-[370px]
-          lg:max-w-[650px]
-          xl:max-w-[860px]
-        "
-      >
-        <div className="w-min">
-          <div
-            ref={trackRef}
-            className="flex whitespace-nowrap will-change-transform cursor-grab active:cursor-grabbing select-none"
-          >
-            {infiniteSkills.map((skill, index) => (
-              <div
-                key={index}
-                className="
-                  mr-2
-                  flex
-                  h-25
-                  min-w-[140px]
-                  flex-col
-                  items-center
-                  rounded-xl
-                  bg-[#2d2d2dcc]
-                  p-3.5
-                  text-center
-                  shadow-lg
-                  transition-all
-                  duration-300
-                  hover:bg-purple-600
+      <div className="w-full overflow-hidden rounded-xl">
+        <div
+          ref={trackRef}
+          className="flex w-max select-none whitespace-nowrap cursor-grab active:cursor-grabbing"
+        >
+          {infiniteSkills.map((skill, index) => (
+            <div
+              key={index}
+              className="
+                mr-3
+                flex
+                h-[110px]
+                min-w-[120px]
+                flex-col
+                items-center
+                justify-center
+                rounded-xl
+                bg-[#2d2d2dcc]
+                p-3
+                text-center
+                transition-all
+                duration-300
+                hover:bg-[#8c21d3]
 
-                  md:h-[120px]
-                  md:w-[100px]
+                sm:min-w-[140px]
 
-                  lg:mr-2.5
-                  lg:h-25
-                  lg:min-w-[200px]
-                "
-              >
-                <div className="mb-2 text-2xl md:text-[28px] lg:text-[32px]">
-                  {skill.icon}
-                </div>
+                md:h-[120px]
+                md:min-w-[160px]
 
-                <h3 className="pb-6 text-[13px] text-white md:text-lg lg:text-base">
-                  {skill.name}
-                </h3>
+                lg:h-[120px]
+                lg:min-w-[180px]
+              "
+            >
+              <div className="mb-2 text-3xl">
+                {skill.icon}
               </div>
-            ))}
-          </div>
+
+              <h3 className="text-sm text-white">
+                {skill.name}
+              </h3>
+            </div>
+          ))}
         </div>
       </div>
     </div>
