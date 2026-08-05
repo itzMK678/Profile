@@ -116,8 +116,8 @@ const Test = () => {
       </Helmet>
 
     <div className="w-full flex flex-col lg:flex-row box-border pt-4">
-  {/* Left Side */}
-  <div className="px-4 w-full flex flex-col items-center">
+{/* Left Side */}
+  <div className="px-4 w-full lg:w-[33%] lg:self-start flex flex-col items-center">
      <p className="w-full pl-4 lg:pl-4 text-left text-[16px] text-[#8c21d3]">
       Profile
     </p>

@@ -137,7 +137,7 @@ const Projects = () => {
         );
 
   return (
-    <>
+    <div className="w-full flex flex-col items-center justify-center ">
       <p className="text-[#a432f0ff]">Projects</p>
 
 {/* Category Buttons */}
@@ -146,7 +146,7 @@ const Projects = () => {
           <div
             key={index}
             onClick={() => setSelectedCategory(item)}
-            className={`text-center px-[10px] py-[10px] rounded-[22px] text-white cursor-pointer border border-[rgb(138,0,230)] ${
+            className={`text-center p-[10px] w-[150px] rounded-[22px] text-white cursor-pointer border border-[rgb(138,0,230)] ${
               selectedCategory === item
                 ? "bg-[#8a00e6]"
                 : "bg-black"
@@ -170,7 +170,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
