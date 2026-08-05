@@ -165,9 +165,11 @@ const Test = () => {
     </div>
   </div>
 
-  {/* Right Side */}
-  <div className="mx-2 w-full lg:w-[67%]">
-    {content}
+{/* Right Side */}
+  <div className="px-4 w-full lg:w-[67%] flex flex-col items-center">
+    <div className="w-full">
+      {content}
+    </div>
   </div>
 </div>
     </>
