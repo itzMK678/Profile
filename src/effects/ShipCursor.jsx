@@ -1,32 +1,49 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import ship from "../assets/cursor.png";
 
 export default function ShipCursor() {
-  const [pos, setPos] = useState({ x: 0, y: 0 });
+  const cursorRef = useRef(null);
 
   useEffect(() => {
-    const move = (e) => {
-      setPos({
-        x: e.clientX,
-        y: e.clientY,
-      });
+    let mouseX = 0;
+    let mouseY = 0;
+    let animationFrameId;
+
+    const handleMouseMove = (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
     };
 
-    window.addEventListener("mousemove", move);
+    const updateCursor = () => {
+      if (cursorRef.current) {
+        cursorRef.current.style.transform = `translate3d(${mouseX - 20}px, ${
+          mouseY - 20
+        }px, 0) rotate(-3deg)`;
+      }
 
-    return () => window.removeEventListener("mousemove", move);
+      animationFrameId = requestAnimationFrame(updateCursor);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    animationFrameId = requestAnimationFrame(updateCursor);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+      cancelAnimationFrame(animationFrameId);
+    };
   }, []);
 
   return (
     <img
+      ref={cursorRef}
       src={ship}
-      alt=""
-      className="fixed pointer-events-none z-[9999] w-10 h-10"
+      alt="Cursor"
+      className="fixed top-0 left-0 w-10 h-10 pointer-events-none z-[9999] select-none"
       style={{
-        left: pos.x,
-        top: pos.y,
-        transform: "translate(-50%, -50%) rotate(-3deg)",
+        willChange: "transform",
       }}
+      draggable={false}
     />
   );
 }
